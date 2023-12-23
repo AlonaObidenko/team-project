@@ -59,7 +59,7 @@
             We work only in small towns. Thanks to this, we maintain quality and
             we will not spray
           </p>
-          <button type="button" class="hero-btn">Submit your application</button>
+          <button type="button" class="hero-btn" data-modal-open>Submit your application</button>
         </div>
         <img
           src="./images/hero-img.svg"
@@ -219,5 +219,41 @@
         </ul>
       </section>
     </main>
+
+<div class="backdrop is-hidden" data-modal >
+
+  <div class="modal">
+
+<button type="button" class="modal-btn-close" data-modal-close>
+X
+
+</button>
+
+<p class="modal-subtitle"
+>Contact Us </p>
+<p class="modal-title"><span class="mod-tit-part">Contact</span> Us & We Can Work Together</p>
+
+<p class="mod-text">Lorem ipsum dolor sit amet consectetur. Adipiscing nisl id at arcu enim id gravida pulvinar. Tristique consectetur mi
+curabitur congue enim dignissim</p>
+
+<form class="mod-form">
+<input type="text" class="user-text" required name="user-name" placeholder="Your name"/>
+<input type="email" class="user-text" required name="email" placeholder="Your Email"/>
+<textarea name="message" class="user-text mess-text" placeholder="Your message"></textarea>
+
+<button type="submit" class="send-form">
+  Submit Message
+</button>
+
+</form>
+
+  </div>
+
+
+
+
+</div>
+<script src="./js/modal.js"></script>
+
   </body>
 </html>

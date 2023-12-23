@@ -124,3 +124,164 @@ img {
       border: none;
       cursor: pointer;
 }
+
+.backdrop {
+  background: rgba(0, 0, 0, 0.56);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* opacity: 0;
+  visibility: hidden;
+  pointer-events: none; */
+}
+
+.is-hidden {
+  opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+/* .backdrop.is-open { 
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+} */
+
+.modal {
+  width: 650px;
+    min-height: 854px;
+background-color: #FFFFFF;
+padding: 76px 50px;
+position: absolute;
+top: 50%;
+left: 50%;
+transform: translate(-50%, -50%);
+}
+
+.modal-btn-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 30px;
+  height: 30px;
+  background-color: #2C7250;
+  color: #FFF;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modal-subtitle {
+  color: #000;
+  
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.55;
+  
+    letter-spacing: 0.03em;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    margin-bottom: 19px;
+}
+
+.modal-subtitle::before{
+width: 143px;
+  height: 2px;
+  background: #D8D8D8;
+  content: "";
+  display: block;
+}
+
+.modal-title {
+  color: #006333;
+    font-family: Poppins;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 1.26;
+    letter-spacing: 0.03em;
+    margin-bottom: 31px;
+}
+
+.mod-tit-part {
+  color: #000;
+}
+
+.mod-text {
+  margin-bottom: 23px;
+  color: #006333;
+  
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    /* 24.8px */
+    letter-spacing: 0.03em;
+}
+
+.mod-form {}
+
+.user-text {
+  width: 100%;
+    height: 60px;
+    border-radius: 5px;
+      border: 1px solid #CACACA;
+    
+      background: transparent;
+      padding-left: 21px;
+      margin-bottom: 23px;
+      display: block;
+      outline: transparent;
+}
+
+.user-text::placeholder {
+  color: #000;
+  
+    text-align: justify;
+    font-family: Poppins;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.55;
+    letter-spacing: 0.03em;
+    
+}
+
+.user-text:focus {border-color: #006333;
+
+}
+
+.mess-text {
+  width: 100%;
+  height: 149px;
+  padding: 22px 21px;
+  resize: none;
+  margin-bottom: 33px;
+}
+
+.send-form {
+  min-width: 181px;
+    height: 48px;
+    color: #FFF;
+    
+      text-align: center;
+      font-family: Poppins;
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0.03em;
+        border-radius: 5px;
+          background: #2C7250;
+          border: none;
+          cursor: pointer;
+}
